@@ -3,16 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CursosModule } from './cursos/cursos.module';
+import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { MeuFormModule } from './meu-form/meu-form.module';
+import { InputPropertyComponent } from './input-property/input-property.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
+
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        MeuPrimeiroComponent,
+        DataBindingComponent,
+        InputPropertyComponent,
+        OutputPropertyComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        CursosModule,
+        MeuFormModule
+    ]
 })
 export class AppModule { }
